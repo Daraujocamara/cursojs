@@ -12,13 +12,18 @@
     <input type="button" value="verificar" onclick="verificar()">
     <div id="res"></div>
     <script>
-        function classificar(){
+        function verificar(){
             var txtp= window.document.querySelector('input#txtpais')
 
             var res = window.document.querySelector('div#res')
 
-            var pais = (txtpais.value)
-            res.innerHTML = `Seu pais de origem é:${res}`
+            var pais = txtp.value
+            res.innerHTML = `<p>Seu pais de origem é:<strong>${pais}</strong></p><br>`
+            if(pais=='Brasil'){
+                res.innerHTML +=`<p>Você é <strong>Brasileiro</strong></p>`
+            }else{
+                res.innerHTML+=`<p>Você é <strong>estrangeiro</strong></p>`
+            }
         }
 
     </script>

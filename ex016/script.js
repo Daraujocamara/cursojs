@@ -4,9 +4,8 @@ function contar(){
     let passo = document.getElementById('txtp')
     let res = document.getElementById('res')
 
-    if(ini.valeu.length == 0 || fim.valeu.length == 0 || passo.valeu.length == 0){
+    if(ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
         window.alert('[ERRO] Falta dados!')
     }else {
-        res.innerHTML = 'contando:'
-    }
+        res.innerHTML=('Contando...')
 }
